@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'portfolio',
+    'honors-portfolio',
     'webpack_loader',
     'django_heroku'
 ]
@@ -54,7 +54,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'portfolio.urls'
+ROOT_URLCONF = 'honors-portfolio.urls'
 
 TEMPLATES = [
     {
@@ -72,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'portfolio.wsgi.application'
+WSGI_APPLICATION = 'honors-portfolio.wsgi.application'
 
 
 # Database
@@ -127,7 +127,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles', '')
 
 WEBPACK_LOADER = {
     'DEFAULT': {
-        'BUNDLE_DIR_NAME': 'portfolio/static/dist/',
+        'BUNDLE_DIR_NAME': 'honors-portfolio/static/dist/',
         'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.json')
     }
 }
