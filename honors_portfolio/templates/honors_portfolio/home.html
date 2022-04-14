@@ -1,0 +1,66 @@
+{% extends 'honors_portfolio/base.html' %}
+{% load static %}
+{% block content %}
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center justify-content-center hero">
+    <div class="container" data-aos="fade-up">
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+            <div class="col-xl-6 col-lg-8">
+
+                <h1><span>Erik Halenkamp</span></h1>
+                <h2>B.S. Software Engineering; Legal Studies Minor</h2>
+                <h2>hale0084@bears.unco.edu &#8212; 801843151</h2>
+            </div>
+        </div>
+
+        <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
+            <div class="col-xl-2 col-md-4">
+                <div class="icon-box">
+                    <a href="#resume"> <i class="ri-attachment-line"></i></a>
+                    <h3><a href="#resume">Resume</a></h3>
+                </div>
+            </div>
+            <div class="col-xl-2 col-md-4">
+                <div class="icon-box">
+                    <a href="#transcript"> <i class="ri-book-open-line"></i></a>
+                    <h3><a href="#transcript">Transcript</a></h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section><!-- End Hero -->
+
+<main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="transcript" class="about">
+        <div class="container" data-aos="fade-up">
+            <div class="text-center">
+                <h3 style="margin-top:30px; font-size:40px;">Unofficial Transcript</h3>
+                <br>
+                <embed src="{% static 'pdf/transcript.pdf' %}" width="1140" height="900" type="application/pdf">
+            </div>
+
+        </div>
+    </section><!-- End About Section -->
+
+
+    <!-- ======= Cta Section ======= -->
+    <section id="resume" class="cta">
+        <div class="container" data-aos="zoom-in">
+
+            <div class="text-center">
+                <h3 style="margin-top:30px; font-size:40px;">Full Resume</h3>
+                <br>
+                <embed src="{% static 'pdf/resume.pdf' %}" width="1140" height="900" type="application/pdf">
+            </div>
+
+        </div>
+    </section><!-- End Cta Section -->
+
+
+
+</main><!-- End #main -->
+{% endblock content %}

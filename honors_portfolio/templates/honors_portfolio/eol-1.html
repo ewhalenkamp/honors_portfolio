@@ -1,0 +1,83 @@
+{% extends 'honors_portfolio/base.html' %}
+{% load static %}
+{% block content %}
+<main id="main">
+
+  <script>
+    document.getElementById("header").classList.add("header-inner-pages");
+    document.getElementById("homebutton").href = '/'
+    document.getElementById("aboutbutton").href = '/#about'
+  </script>
+
+  <!-- ======= Breadcrumbs ======= -->
+  <div class="project-1">
+    <br>
+    <br>
+    <br>
+    <section class=" breadcrumbs">
+
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h1>RecordWall</h1>
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li>RecordWall</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <section class="inner-page">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-6 order-lg-1 order-2" data-aos="fade-up" data-aos-delay="100">
+
+
+            <div class="icon-box" style="padding:50px; border:3px solid gray;">
+              <h4>Project Type</h4>
+              <p>Full-Stack iOS Application</p>
+              <h4>Development Team / Timeline</h4>
+              <p>Partially Freelanced Frontend & Fully Custom Backend / 3 months</p>
+              <h4>Date Completed</h4>
+              <p>Released September 2021 (Updates Ongoing)</p>
+              <h4>Project URL</h4>
+              <p><a target="blank" href="https://recordwallapp.com">Download Link</a> (iOS Only)
+              </p>
+              <!-- <h4>GitHub URL</h4>
+              <p><a href="https://github.com/ewhalenkamp/multimusicplayer" target="_blank"
+                  rel="noopener noreferrer">https://github.com/ewhalenkamp/multimusicplayer</a></p> -->
+            </div>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-lg-2 order-1 content" data-aos="fade-up" data-aos-delay="100">
+            <h2>Project Description</h2>
+            <p>RecordWall is an app that allows for real-time sharing of music with all your friends. With RecordWall, you can start a room (wall) where everyone you invite is able to add their music to a public queue. Filter which songs you wouldn't like to hear for a more streamlined music sharing experience!
+            </p>
+            <p>
+              RecordWall is currently only available on the App Store for iOS devices. Includes user accounts/verification, third party and proprietary APIs, in-app purchases, advertisements, and a growing database of licensed music using PostgreSQL and AWS S3.
+            </p>
+            <h2>Languages and Technologies</h2>
+            <div class="minilogos">
+              <img style="width: 75px;" src="{% static '/img/icons/django.png' %}" alt="django" title="Django">
+              <img src="{% static 'img/icons/restapi.png' %}" alt="restapi" title="REST API">
+              <img style="width: 75px;" src="{% static '/img/icons/swift.png' %}" alt="Swift"
+                title="Swift">
+                <img style="width: 75px;" src="{% static '/img/icons/aws.png' %}" alt="AWS"
+                title="AWS">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </section>
+  </div>
+
+</main><!-- End #main -->
+
+{% endblock content %}
