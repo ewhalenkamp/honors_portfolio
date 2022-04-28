@@ -6,8 +6,8 @@ from django.shortcuts import get_object_or_404, render, redirect
 def home(request):
     return render(request, 'honors_portfolio/home.html')
 
-def eol(request, subject_id):
-    templatename = 'eol-'+str(subject_id)
+def eol(request, course_id):
+    templatename = 'eol-'+str(course_id)
     return render(request,'honors_portfolio/'+templatename+'.html')
 
 def hc(request):
