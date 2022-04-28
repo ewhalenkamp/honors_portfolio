@@ -12,7 +12,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import os
-import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,7 +26,7 @@ SECRET_KEY = '*^cov*mlo_cf*0eu90tixz@#6^9e#uw8j%&neism_+7kq%&%' + '#d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://erik-halenkamp.herokuapp.com', 'http://portfolio-dev.us-west-1.elasticbeanstalk.com/',
+ALLOWED_HOSTS = ['https://ewhalenkamp.pythonanywhere.com', 
                  '127.0.0.1', 'http://localhost']
 
 # Application definition
@@ -41,7 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'honors_portfolio',
     'webpack_loader',
-    'django_heroku'
 ]
 
 MIDDLEWARE = [
@@ -131,4 +129,3 @@ WEBPACK_LOADER = {
         'STATS_FILE': os.path.join(BASE_DIR, 'webpack-stats.json')
     }
 }
-django_heroku.settings(locals())
